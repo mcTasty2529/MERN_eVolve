@@ -10,20 +10,61 @@
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        background-color: rgb(58, 58, 68);
+      }
       .demo {
         height: 300px;
         width: 300px;
-        background-color: rgb(157, 7, 226);
+        /* background-color: rgba(157, 7, 226, 1); */
 
         /* background-color: ; */
         /* color-name */
         /* rgb =(red,green,blue) */
+
         /* hsl =(hue, saturation, lightness) */
         /* hue - color:0-359 */
         /* saturation - color intensity:0-100% */
         /* lightness - color brightness:0-100 */
+
         /* hex - #rrggbb:0-ff */
+        /* ff:255 */
+
+        /* adding transparency */
+        /* rgba(red,green,blue,alpha) */
+        /* alpha:0-1  = transparency*/
+
+        /* hsl =(hue, saturation, lightness, alpha) */
+
+        /* hex - #rrggbbaa:0-ff */
+        /* aa:alpha */
+
+        /* gradients: */
+        /* background-image: linear-gradient(
+          45deg,
+          red 10%,
+          yellow 25%,
+          blue 50%,
+          green 75% percentage always in increasing order for each color
+        ); */
+
+        /* background-image: repeating-linear-gradient(
+          45deg,
+          red 10%,
+          yellow 25%,
+          blue 50%,
+          green 75% percentage always in increasing order for each color
+        ); */
+
+        background-image: radial-gradient(
+          300px at 50px 50px,
+          /* at x y : center coordinates for gradient */ red,
+          yellow,
+          blue
+        );
       }
+      /* repeating-linear-gradient() */
+      /* radial-gradient(size,color,color,....) */
     </style>
   </head>
   <body>
