@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form methods
+    get:(default)
+        -to get info from server
+        -eg: search
+        -not secure cuz data is passed through url
+        -limited data size
+
+    post:
+        -to send info to teh server
+        -eg: upload, messaging, login
+        -data is passed using boy of a form
+        -secure
+        -unlimited data size
+
+    -->
+    <main>
+      <form>
+        <label for="input">Name:</label>
+        <input
+          type="text"
+          id="input"
+          name="f-name"
+          placeholder="First Name"
+          required
+          minlength="6"
+          maxlength="15"
+          size="10"
+        />
+        <hr />
+        <label for="dob">Date of Birth:</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          value="2020-06-26"
+          max="2025-05-05"
+          min="2010-05-05"
+        />
+        <hr />
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" />
+        <hr />
+
+        <fieldset>
+          <legend>Login Info</legend>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email" />
+          <hr />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </fieldset>
+
+        <hr />
+        <label>Hobby:</label>
+        <input
+          type="checkbox"
+          id="read"
+          name="hobby"
+          value="read"
+          checked
+        /><label for="read">Reading books</label>
+        <hr />
+
+        <label>Gender:</label>
+        <input type="radio" value="m" id="male" name="gender" /><label
+          for="male"
+          >Male</label
+        >
+        <input type="radio" value="f" id="female" name="gender" />
+        <label for="female">Female</label>
+        <hr />
+        <label for="address"></label>
+        <select name="add" id="address">
+          <option value="" disabled selected>Select your city</option>
+          <option value="ktm">Kathandu</option>
+          <option value="pkr">Pokhara</option>
+          <option value="cwn">Chitwan</option>
+        </select>
+        <hr />
+        <label for="pic">Picture</label>
+        <input type="file" id="file" />
+        <hr />
+        <label for="textarea">Description</label>
+        <br />
+        <textarea name="text" id="textarea" cols="30" rows="10">
+Description</textarea
+        >
+        <hr />
+        <label for="color">Color</label>
+        <input type="color" />
+        <hr />
+        <input type="range" value="78" />
+        <hr />
+        <input type="reset" />
+        <button>Click Me</button>
+      </form>
+    </main>
+  </body>
+</html>

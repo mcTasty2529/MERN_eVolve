@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <button onclick="toggleDisplay()">Toggle</button>
+        <div
+          style="background-color: green; display: inline; padding: 6px"
+          class="sample-text"
+        >
+          Hello world
+        </div>
+      </div>
+      <script>
+        let isVisible = true;
+        const toggleDisplay = () => {
+          const text = document.querySelector(".sample-text");
+
+          if (isVisible) {
+            text.style.backgroundColor = "red";
+            text.innerHTML = "You Clicked Toggle";
+            isVisible = false;
+          } else {
+            text.style.backgroundColor = "green";
+            text.innerHTML = "Click to toggle";
+            isVisible = true;
+          }
+        };
+      </script>
+    </main>
+  </body>
+</html>
