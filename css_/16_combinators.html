@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3,
+      p,
+      .first {
+        color: purple;
+      }
+      .demo h1,
+      .demo p {
+        color: blue;
+      }
+      .demo div p {
+        color: red;
+      }
+      .demo > h1 {
+        text-align: right;
+      }
+      h1 ~ p {
+        font-size: 30px;
+
+        text-transform: capitalize;
+      }
+      h3 + p {
+        text-transform: uppercase;
+      }
+      h1:hover {
+        color: red;
+        cursor: pointer;
+      }
+      h3:active {
+        font-size: 40px;
+      }
+      a:link {
+        color: green;
+      }
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: yellowgreen;
+      }
+      a:active {
+        color: yellow;
+      }
+      li:first-child {
+        background-color: aqua;
+      }
+      li:last-child {
+        background-color: blueviolet;
+      }
+      li:nth-child(7) {
+        background-color: yellowgreen;
+      }
+      li:nth-child(even) {
+        color: red;
+      }
+      li:nth-child(odd) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+    <!-- 
+    Universal selectors(*)
+    Combinatiors:
+    1. Grouping selectors:
+        we use comma to group multiple selectors to apply same css.
+    2.Descendant selectors:
+        we use space to apply css to the descedent elements.
+    3.Child selectors:
+        immediae descendants are child elements.
+        to apply css to child , we use greater than(>) symbol.
+    4.General Siblings:
+        to apply css to the following elements, we use tilde(~) symbol.
+    5.Adjacent sibling:
+        immediately folowing sibling element we use plus(+) symbol to denote adjacent sibling
+
+
+    #Pseudo Classes
+    :hover - mouse hover
+    :active - mouse click
+
+    :link
+    :visited
+
+    :focus
+
+    :first-child
+    :last-child
+    :nth-child(3)
+    :nth-child(even)
+    :nth-child(odd)
+ -->
+    <a href="#">Click me</a>
+    <a href="#first">Click me</a>
+    <div class="demo">
+      <h1>descHeading</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        harum!
+      </p>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <h3>Heading</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic delectus
+      tempora temporibus ab esse cum. Quae illo nostrum praesentium fuga sequi,
+      itaque voluptatum rerum aut, dolores tempore suscipit, totam ad!
+    </p>
+    <p class="first">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi neque ex
+      suscipit ratione repudiandae nesciunt sed aliquam inventore hic rerum
+      velit, aspernatur libero eligendi non. Harum natus similique mollitia
+      exercitationem!
+    </p>
+  </body>
+</html>
