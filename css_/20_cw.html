@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 10vw 45vw 45vw;
+        grid-template-rows: 5vh 40vh 40vh 10vh;
+        width: 100vw;
+      }
+      .logo {
+        background-color: purple;
+      }
+      .navbar {
+        grid-column: 2/4;
+        background-color: aqua;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .sidebar {
+        grid-row: 2/4;
+        background-color: yellowgreen;
+      }
+      .topmain {
+        background-color: orange;
+        grid-column: 2/4;
+      }
+      .bottomleft {
+        grid-row: 3/4;
+        background-color: purple;
+      }
+      .bottomright {
+        grid-row: 3/4;
+        background-color: yellowgreen;
+      }
+      .footer {
+        grid-column: 1/4;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">Logo</div>
+      <div class="navbar">
+        <li>HOme</li>
+        <li>dkjfh</li>
+        <li>lkdfjk</li>
+        <li>dfjk</li>
+      </div>
+      <div class="sidebar">Sidebar</div>
+      <div class="topmain">topmain</div>
+      <div class="bottomleft">bl</div>
+      <div class="bottomright">br</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>

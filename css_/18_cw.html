@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        height: 300px;
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        gap: 5px;
+      }
+      .first {
+        height: 100%;
+        width: 300px;
+        background-color: red;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+      }
+      .second {
+        width: 100%;
+        background-color: green;
+        height: 150px;
+      }
+      .container3 {
+        display: flex;
+        height: 150px;
+        width: 100%;
+        gap: 5px;
+      }
+      .third {
+        background-color: pink;
+        width: 100%;
+      }
+      .container4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+      }
+      .fourth {
+        height: 50%;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="first">1</div>
+      <div class="container2">
+        <div class="second">2</div>
+        <div class="container3">
+          <div class="third">3</div>
+          <div class="container4">
+            <div class="fourth">4a</div>
+            <div class="fourth">4b</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
