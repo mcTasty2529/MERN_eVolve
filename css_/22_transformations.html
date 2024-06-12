@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 100px;
+      }
+      .demo1 {
+        height: 300px;
+        width: 300px;
+        transition: 1s;
+        background-color: yellowgreen;
+        text-align: center;
+        font-size: x-large;
+      }
+      .loader {
+        height: 300px;
+        width: 300px;
+        transition: 1s;
+        text-align: center;
+        font-size: x-large;
+        border-radius: 50%;
+        border-left: 10px solid black;
+        border-bottom: 5px solid black;
+        display: flex;
+        align-items: center;
+        background-color: yellowgreen;
+        justify-content: space-evenly;
+        animation-name: loaderanim;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-direction: alternate;
+      }
+
+      @keyframes loaderanim {
+        from {
+          background-color: yellowgreen;
+        }
+        to {
+          transform: rotate(360deg);
+          background-color: blue;
+        }
+      }
+      .demo1:hover {
+        /*
+        transformation:
+            change in location, orientation, size, shape. 
+         translate: change in location
+            translate(x-dis,y-dis)
+         rotate: change in orientation
+         scale: change in size 
+         skew: change in shape       
+            */
+
+        transform: translateX(100px) translateY(100px) rotateX(45deg)
+          scaleY(0.5) scaleX(1.5) skewX(20deg) skewY(-20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque at
+      sunt repellat rerum pariatur. Voluptate modi officiis ea laborum fugiat
+      eligendi quidem eveniet molestias deleniti, quaerat sapiente perferendis.
+      Placeat alias voluptate velit est. Ratione asperiores voluptate doloremque
+      rem aliquam!
+    </div>
+    <div class="loader">loader</div>
+  </body>
+</html>
