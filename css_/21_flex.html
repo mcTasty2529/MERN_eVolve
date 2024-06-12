@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        text-align: center;
+      }
+      .logo {
+        background-color: purple;
+        height: 100%;
+        width: 15%;
+      }
+      .navbar {
+        background-color: aqua;
+        width: 85%;
+        height: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+      }
+      .topcontainer {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 5vh;
+      }
+      .midcontainer {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+      }
+      .sidebar {
+        height: 100%;
+        width: 15%;
+        background-color: greenyellow;
+      }
+      .rightcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+      }
+      .maintop {
+        background-color: orange;
+        width: 100%;
+        height: 50%;
+      }
+      .bottomcontainer {
+        display: flex;
+        width: 100%;
+        height: 50%;
+      }
+      .bl {
+        background-color: blueviolet;
+        width: 50%;
+      }
+      .br {
+        background-color: yellowgreen;
+        width: 50%;
+      }
+      .footer {
+        background-color: aqua;
+        height: 10vh;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topcontainer">
+        <div class="logo">Logo</div>
+        <div class="navbar">
+          <li>Item1</li>
+          <li>Item2</li>
+          <li>Item3</li>
+          <li>Item4</li>
+        </div>
+      </div>
+      <div class="midcontainer">
+        <div class="sidebar">Sidebar</div>
+        <div class="rightcontainer">
+          <div class="maintop">Maintop</div>
+          <div class="bottomcontainer">
+            <div class="bl">Bottomleft</div>
+            <div class="br">BottomRight</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
