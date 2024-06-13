@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .demo {
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+      }
+      /* @media screen and (max-width: 500px) {
+        .demo {
+          background-color: blueviolet;
+        }
+      }
+      @media screen and (min-width: 700px) {
+        .demo {
+          background-color: red;
+        }
+      } */
+      @media screen and (min-width: 1200px) {
+        .demo {
+          background-color: blueviolet;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        .demo {
+          background-color: green;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .demo {
+          background-color: blue;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .demo {
+          background-color: darkgoldenrod;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">demo</div>
+  </body>
+</html>
