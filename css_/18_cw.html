@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      *,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .container1 {
         height: 300px;
         width: 100vw;
@@ -35,7 +41,7 @@
         gap: 5px;
       }
       .third {
-        background-color: pink;
+        background-color: yellowgreen;
         width: 100%;
       }
       .container4 {
@@ -47,6 +53,37 @@
       .fourth {
         height: 50%;
         background-color: blue;
+      }
+      @media screen and (max-width: 500px) {
+        .container1 {
+          height: 100vh;
+          width: 100vw;
+          flex-direction: column;
+          gap: 0;
+        }
+        .first {
+          width: 100%;
+          height: 40%;
+        }
+        .container2 {
+          height: 60%;
+          gap: 0;
+        }
+        .second {
+          height: 50%;
+        }
+        .container3 {
+          height: 50%;
+          flex-direction: column;
+          gap: 0;
+        }
+        .third {
+          height: 50%;
+        }
+        .container4 {
+          gap: 0;
+          height: 50%;
+        }
       }
     </style>
   </head>
