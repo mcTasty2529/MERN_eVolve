@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="./mule.png" type="image/x-icon" />
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./mystyle.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
@@ -71,12 +71,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
+              <a class="nav-link " aria-current="page" href="./index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./products.html">Products</a>
+              <a class="nav-link active" href="./products.html">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./services.html">Services</a>
@@ -88,7 +88,7 @@
               <a class="nav-link" href="./blogs.html">Blogs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
+              <a class="nav-link " href="./contact.html">Contact</a>
             </li>
             <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -114,67 +114,115 @@
     <!-- Header End -->
 
     <!-- main content start -->
-    <div class="container-fluid">
-      <div class="row">
-        <div
-          class="col-11 col-md-8 col-lg-6 col-xl-5 mx-auto rounded rounded-md"
-        >
-          <form class="w-100 p-5 shadow-lg my-5">
-            <div class="text-center overflow-hidden">
-              <img
-                class="mb-4 rounded-circle"
-                src="./images/(14).jpg"
-                alt=""
-                width="72"
-                height="57"
-              />
-            </div>
 
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="container-flid">
+        <div class="row">
+            <div class="col-md-3 pt-5 ps-5">
+                <h4>Deals</h4>
+                <ul class="list-unstyled ps-3">
+                    <li><a href="#" class="text-decoration-none fw-bold text-success">TOP DEALS</a></li>
+                    <li><a href="#" class="text-decoration-none fw-bold text-danger">Flash Sale</a></li>
+                    <li><a href="#"class="text-decoration-none fw-bold text-info">Most Popular</a></li>
+                </ul>
 
-            <div class="form-floating mb-2">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-2">
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">Password</label>
-            </div>
+            <h4>Categories</h4>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                <label class="form-check-label" for="flexCheckDefault1">
+                  Accessories
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                  <label class="form-check-label" for="flexCheckDefault2">
+                  Fitness
+                  </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                    <label class="form-check-label" for="flexCheckDefault3">
+                   Console
+                    </label>
+                    </div>
 
-            <div class="form-check text-start my-3">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="remember-me"
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Remember me
+            <h4>Prices</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                All
               </label>
             </div>
-            <button class="btn btn-primary w-100 py-2" type="submit">
-              Sign in
-            </button>
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-              <span
-                >Do not have an account?
-                <a href="./register.html">Sign Up</a></span
-              >
-              <a href="./forgot.html">Forgot Password</a>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
+              <label class="form-check-label" for="flexRadioDefault11">
+                $1000-$2000
+              </label>
             </div>
-            <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
-          </form>
-          <!-- main content end -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
+              <label class="form-check-label" for="flexRadioDefault12">
+                $3000-$6000
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault13">
+              <label class="form-check-label" for="flexRadioDefault13">
+                $10000-$20000
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault14">
+              <label class="form-check-label" for="flexRadioDefault14">
+                $50000-$100000
+              </label>
+            </div>
+            <h4>Avg. Customer Review</h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
+              </li>
+              <li>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </li>
+              <li>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </li>
+              <li>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </li>
+            </ul>
+            </div>
+                
+          </div>
+                
+            
+          <div class="col-md-9">Products</div>
+        </div>
+    </div>
+    <!-- main content end -->
         </div>
       </div>
     </div>

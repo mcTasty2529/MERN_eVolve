@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="./mule.png" type="image/x-icon" />
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./mystyle.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
@@ -90,23 +90,6 @@
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li> -->
           </ul>
         </div>
       </div>
@@ -116,9 +99,7 @@
     <!-- main content start -->
     <div class="container-fluid">
       <div class="row">
-        <div
-          class="col-11 col-md-8 col-lg-6 col-xl-5 mx-auto rounded rounded-md"
-        >
+        <div class="col-11 col-md-8 col-lg-6 col-xl-5 mx-auto rounded-5">
           <form class="w-100 p-5 shadow-lg my-5">
             <div class="text-center overflow-hidden">
               <img
@@ -130,25 +111,119 @@
               />
             </div>
 
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <h1 class="h3 mb-3 fw-normal">Register</h1>
+
+            <div class="form-floating mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputFname"
+                placeholder="Fname"
+                required
+              />
+              <label for="floatingInputFname">First Name</label>
+            </div>
+
+            <div class="form-floating mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputLname"
+                placeholder="Lname"
+                required
+              />
+              <label for="floatingInputLname">Last Name</label>
+            </div>
+
+            <div class="form-floating mb-2">
+              <input
+                type="date"
+                class="form-control"
+                id="floatingInputdob"
+                placeholder="example@email.com"
+              />
+              <label for="floatingInputdob">DOB</label>
+            </div>
+
+            <div class="form-floating mb-2">
+              <select name="address" id="add" class="form-control" required>
+                <option value="select" disabled selected>
+                  Choose your CIty
+                </option>
+                <option value="Ktm">Kathmandu</option>
+                <option value="Bkt">Bhaktaput</option>
+                <option value="Ltp">Lalitpur</option>
+                <option value="Pkr">Pokhara</option>
+              </select>
+              <label for="add">Address</label>
+            </div>
+
+            <div class="form-floating mb-2">
+              <div class="form-control d-flex justify-content-evenly">
+                <div>
+                  <input
+                    type="radio"
+                    id="male"
+                    value="male"
+                    name="gender"
+                    class="me-2"
+                  />
+                  <label for="male">Male</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="female"
+                    value="female"
+                    name="gender"
+                    class="me-2"
+                  />
+                  <label for="female">Female</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="others"
+                    value="others"
+                    name="gender"
+                    class="me-2"
+                  />
+                  <label for="others">Others</label>
+                </div>
+              </div>
+              <label for="gender">Gender</label>
+            </div>
 
             <div class="form-floating mb-2">
               <input
                 type="email"
                 class="form-control"
                 id="floatingInput"
-                placeholder="name@example.com"
+                placeholder="example@email.com"
+                required
               />
-              <label for="floatingInput">Email address</label>
+              <label for="floatingInput">Email</label>
             </div>
+
             <div class="form-floating mb-2">
               <input
                 type="password"
                 class="form-control"
                 id="floatingPassword"
                 placeholder="Password"
+                required
               />
               <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating mb-2">
+              <textarea name="desc" id="desc" class="form-control"></textarea>
+              <label for="desc">About Yourself</label>
+            </div>
+
+            <div class="form-floating mb-2">
+              <input type="file" id="img" class="form-control" />
+              <label for="img">Profile Picture</label>
             </div>
 
             <div class="form-check text-start my-3">
@@ -159,18 +234,17 @@
                 id="flexCheckDefault"
               />
               <label class="form-check-label" for="flexCheckDefault">
-                Remember me
+                I accept the terms and conditions.
               </label>
             </div>
             <button class="btn btn-primary w-100 py-2" type="submit">
-              Sign in
+              Register
             </button>
             <div class="d-flex flex-column flex-md-row justify-content-between">
               <span
-                >Do not have an account?
-                <a href="./register.html">Sign Up</a></span
+                >Already not have an account?
+                <a href="./login.html">Sign In</a></span
               >
-              <a href="./forgot.html">Forgot Password</a>
             </div>
             <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
           </form>

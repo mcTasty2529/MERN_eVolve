@@ -8,3 +8,11 @@
 .card img {
   height: 300px;
 }
+textarea {
+  height: 120px !important;
+  resize: none;
+}
+.table img{
+  height: 100px;
+}
+.blog
