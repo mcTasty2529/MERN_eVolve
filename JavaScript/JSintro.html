@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myheading"></div>
+
+    <!-- JavaScript - programming language for web
+                    - dynamic
+         1.console.log(text message) used for debugging      
+         2.document.write(text message) used fot practice only
+                  -overrides html content
+         3.document.getElementById("id").innerHTML
+         -getElementsByTagnamme
+         -getElementsByClassname
+         -querySelectorAll
+         -querySelector
+
+         Outputs
+         4.  -alert/window.alert
+             -window.confirm
+         5.print() - prints the physical output
+        
+         Inputs
+         
+        -->
+    <!-- <button onclick="show()">Click ME</button> -->
+
+    <script>
+      let name = prompt("Enter your Name");
+      let address = prompt("Enter your Address");
+      let phone = Number(prompt("Enter your Phone"));
+      let email = prompt("Enter your email");
+
+      document.write("NAME:", name);
+      document.write("<br>ADDRESS:", address);
+      document.write("<br>PHONE:", phone);
+      document.write("<br>EMAIL:", email);
+    </script>
+  </body>
+</html>
