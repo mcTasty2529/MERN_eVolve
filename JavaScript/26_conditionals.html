@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+              Conditional statements
+              1. if statements :
+                  if(condition){
+                  statement if condition is true
+                  }
+
+              2. if else :
+                  if(condition){
+                  statement if condition is true.
+                  }else{
+                  statement otherwise
+                  }
+
+              3.if - else if - else if:
+                  if(condition1){
+                  statement if condition1 is true
+                  }
+                  else if(condition2){
+                  statement if condition2 is true
+                  }
+                  else{
+                  statement otherwise
+                }
+
+              4.nested if-else statement:
+                  if-else statement inside another if-else statement
+
+                  if(condition){
+                      if(conditionA){
+                      statement if condition and conditionA are true
+                      }
+                      else{
+                      statement if condition is true but conditionA is true
+                      }
+                  }
+                  else{
+                       if(conditionA){
+                      statement if condition is false and conditionA is true
+                      }
+                      else{
+                      statement if condition and conditionA is false
+                      }
+                  }
+
+                  if(condition1 && conditionA){
+                  statement
+                  }
+                  else if(condition1 && !conditionA){
+                  }
+                  else if(!condition1 && conditionB){
+                  }
+                  else{
+                  }
+      ------------------------------------------------------------------------
+
+
+            */
+      // {
+      //   let a = 10;
+      //   if (a < 0) {
+      //     document.write("<br>the number is negative.");
+      //   } else if (a > 0) {
+      //     document.write("<br>the number is positive.");
+      //   } else {
+      //     document.write("<br>the number is zero.");
+      //   }
+      // }
+      // {
+      //   let a = 5;
+      //   let b = 4;
+      //   a > b && document.write("<br> A is greater");
+      // }
+
+      {
+        let a = prompt("enter a number");
+
+        if (a % 2 == 0) {
+          document.write("<br>The number is Even");
+        } else {
+          document.write("<br>The number is Odd");
+        }
+      }
+
+      {
+        let a = prompt("Enter a number");
+
+        if (a % 5 == 0) {
+          if (a % 11 == 0) {
+            document.write("<br> The number is divisible by 5 and 11");
+          } else {
+            document.write("<br> The number is divisible by 5 but not 11");
+          }
+        } else {
+          if (a % 11 == 0) {
+            document.write("<br> The number is divisible by 11 but not 5");
+          } else {
+            document.write("<br> The number is not divisible by 5 and 11");
+          }
+        }
+      }
+
+      {
+        let a = prompt(" Enter a year");
+
+        if ((a % 4 == 0 && a % 100 !== 0) || a % 400 == 0) {
+          document.write("<br> the year is a leap year");
+        } else {
+          document.write("<br> the year is not a leap year");
+        }
+      }
+
+      {
+        let a = prompt("Enter a number.");
+        if (a == 1) {
+          document.write("<br>Sunday");
+        } else if (a == 2) {
+          document.write("<Monday>");
+        } else if (a == 3) {
+          document.write("<Tuesday>");
+        } else if (a == 4) {
+          document.write("<Wednesday>");
+        } else if (a == 5) {
+          document.write("<Thursday>");
+        } else if (a == 6) {
+          document.write("<Friday>");
+        } else if (a == 7) {
+          document.write("<Saturday>");
+        } else {
+          document.write("<br>Invalid input.");
+        }
+      }
+    </script>
+  </body>
+</html>
