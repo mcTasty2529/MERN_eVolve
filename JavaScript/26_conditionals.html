@@ -61,25 +61,38 @@
                   }
                   else{
                   }
+
+--------------------------------------------------------
+                  switch(key){
+                    case value1: 
+                          statement if key === value1
+                          break
+                    case value2:
+                          statement if key === value2
+                          break
+                    default:
+                          statement otherwise
+                  }
       ------------------------------------------------------------------------
 
 
             */
-      // {
-      //   let a = 10;
-      //   if (a < 0) {
-      //     document.write("<br>the number is negative.");
-      //   } else if (a > 0) {
-      //     document.write("<br>the number is positive.");
-      //   } else {
-      //     document.write("<br>the number is zero.");
-      //   }
-      // }
-      // {
-      //   let a = 5;
-      //   let b = 4;
-      //   a > b && document.write("<br> A is greater");
-      // }
+      /*{
+        let a = 10;
+        if (a < 0) {
+          document.write("<br>the number is negative.");
+        } else if (a > 0) {
+          document.write("<br>the number is positive.");
+        } else {
+          document.write("<br>the number is zero.");
+        }
+      }
+      {
+        let a = 5;
+        let b = 4;
+        a > b && document.write("<br> A is greater");
+      }
+        */
 
       {
         let a = prompt("enter a number");
@@ -137,6 +150,34 @@
           document.write("<Saturday>");
         } else {
           document.write("<br>Invalid input.");
+        }
+      }
+      {
+        let day = 5;
+        switch (day) {
+          case 1:
+            document.write("<br>Sunday");
+            break;
+          case 2:
+            document.write("<Monday>");
+            break;
+          case 3:
+            document.write("<Tuesday>");
+            break;
+          case 4:
+            document.write("<Wednesday>");
+            break;
+          case 5:
+            document.write("<Thursday>");
+            break;
+          case 6:
+            document.write("<Friday>");
+            break;
+          case 7:
+            document.write("<Saturday>");
+            break;
+          default:
+            document.write("<br>Invalid input.");
         }
       }
     </script>
