@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //{-----4-----}
+      {
+        let sum = 0;
+        let n = 10;
+        for (let i = 1; i <= n; i++) {
+          document.write(i ** 2, " ");
+          sum = sum + i * i;
+        }
+        document.write("<br>the sum is: ", sum, "<br> <br>");
+      }
+      //{-----5-----}
+      {
+        sum = 0;
+        let a = 1;
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+          document.write(a, " + ");
+          sum = sum + a;
+          a = a * 10 + 1;
+        }
+        document.write("<br> The sum is: ", sum, "<br><br>");
+      }
+      //{-----6-----}
+      {
+        a = 0;
+        b = 1;
+        let n = 10;
+        for (let i = 0; i <= n; i++) {
+          let sum = a + b;
+          a = b;
+          b = sum;
+          document.write(a, " ");
+        }
+        document.write("<br><br>");
+      }
+      //{-----7-----}
+      {
+        let a = 1234567890;
+        length = String(a).length;
+        for (let i = 1; i <= length; i++) {
+          let rem = a % 10;
+          a = parseInt(a / 10);
+          document.write(rem);
+        }
+        document.write("<br><br>");
+      }
+      //{-----8-----}
+      {
+        let a = 1234321;
+        let original = a;
+        let reversed = 0;
+
+        length = String(a).length;
+        while (a > 0) {
+          let rem = a % 10;
+          reversed = reversed * 10 + rem;
+          a = parseInt(a / 10);
+        }
+
+        if (original === reversed) {
+          document.write(" Palindrome");
+        } else {
+          document.write("not Palindrome");
+        }
+        document.write("<br><br>");
+      }
+      //{-----9-----}
+      {
+        let num = 23;
+        let tens = 1;
+        let result = 0;
+        while (num / 2 > 0) {
+          rem = num % 2;
+          result = rem * tens + result;
+          num = Math.floor(num / 2);
+          tens = tens * 10;
+        }
+        document.write(result);
+        document.write("<br><br>");
+      }
+
+      {
+        let num = 10111;
+        let original = num;
+        let result = 0;
+        power = 1;
+
+        while (num !== 0) {
+          let rem = num % 10;
+          result += rem * power;
+          num = Math.floor(num / 10);
+          power = power * 2;
+        }
+        document.write(result);
+        document.write("<br><br>");
+      }
+    </script>
+  </body>
+</html>
