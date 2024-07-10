@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  array: 
+            collection of similar/dissimilar datatypes
+    */
+
+      let arr = [
+        1,
+        2,
+        3,
+        "a",
+        "b",
+        [3, 3, 3],
+        { name: "John" },
+        null,
+        undefined,
+        true,
+      ];
+      document.write(arr);
+
+      //array.length
+      document.write("<br>", arr.length);
+
+      //index
+      document.write("<br>Third: ", arr[2]);
+      document.write("<br>Last: ", arr[arr.length - 1]);
+
+      //destructuring and rest operator[...a]
+      let [a, b, ...c] = arr;
+      document.write("<br>a: ", a);
+      document.write("<br>b: ", b);
+      document.write("<br>c: ", c);
+      {
+        //adding to the array
+        let fruits = ["apple", "banana", "orange", "mango"];
+        document.write("<br><br>Original array: ", fruits);
+
+        //push - add new member and the end of the array
+        //unshift - add new member at the beginning of the array
+
+        fruits.push("pinapple");
+        document.write("<br><br>Push array: ", fruits);
+
+        fruits.unshift("pear");
+        document.write("<br>Unshift array: ", fruits);
+
+        //removing from the array
+        //pop - remove member form end of the array
+        //shift - remove member form start of the array
+        let removed = fruits.pop();
+        document.write("<br><br>Removed array: ", removed);
+        document.write("<br>Popped array: ", fruits);
+
+        removed = fruits.shift();
+        document.write("<br><br>Removed array: ", removed);
+        document.write("<br>Shifted array: ", fruits);
+
+        //splice - add or remove from anywhere in the array
+        //splice(index, number, new_member)
+        //index - where to add/remove from
+        //number - number of members to remove
+        //new_member - new members to add
+
+        fruits.splice(2, 1, "pear", "pinapple");
+        document.write("<br><br>Spliced array: ", fruits);
+
+        //sorting
+        fruits.sort();
+        document.write("<br><br>Sorted array: ", fruits);
+
+        //reversing array
+        fruits.reverse();
+        document.write("<br><br>Reversed array: ", fruits);
+
+        //Number sorting
+        let num = [55, 25, 250, 15, 500, 400, 300, 21, 12, 199];
+        num.sort((a, b) => a - b);
+        document.write("<br><br>Nmbers sort asc: ", num);
+
+        num.sort((a, b) => b - a);
+        document.write("<br>Nmbers sort dsc: ", num);
+
+        //flattening array
+        let result = fruits.flat();
+        document.write("<br><br>Fruits: ", fruits.length);
+        document.write("<br><br>Fruits: ", result.length);
+
+        //slice - creating new array from existing
+        //slice(start_index,end_index) = end is not included\
+
+        let sliced_fruits = fruits.slice(1, 4);
+        document.write("<br><br>Sliced array: ", sliced_fruits);
+      }
+    </script>
+  </body>
+</html>

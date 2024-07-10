@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        let fruits = [
+          "apple",
+          "banana",
+          "orange",
+          "mango",
+          "pinapple",
+          "grapes",
+        ];
+
+        // array.foreacth(function (member) {
+        //   statement;
+        // });
+
+        fruits.forEach((fruit, idx) => {
+          document.write("<li>", fruit, ": ", idx + 1, "</li>");
+        });
+
+        document.write("<br>");
+        for (var items in fruits) {
+          document.write("<li>", fruits[items], "</li>");
+        }
+
+        document.write("<br>");
+        for (var items of fruits) {
+          document.write("<li>", items, "</li>");
+        }
+
+        fruits.map((fruit, idx) => {
+          document.write("<h3>", idx + 1, ": ", fruit, "<h2>");
+        });
+
+        //filter
+        {
+          let fruits = [
+            "apple",
+            "banana",
+            "orange",
+            "mango",
+            "pinapple",
+            "grapes",
+          ];
+          let filter = fruits.filter((fruit) => fruit.match("ap"));
+          document.write("<br>Filtered: ", filter);
+          //
+          let num = [12, 25, 35, 45, 52, 67, 74, 94, 99];
+          filter = num.filter((number) => number > 50);
+          document.write("<br>Filtered num: ", filter);
+          //
+          document.write("<br>");
+
+          let find = fruits.find((fruit) => fruit.match("ap"));
+          document.write("<br>Find :", find);
+          //
+          find = num.find((n) => n > 50);
+          document.write("<br>Find num :", find);
+
+          //FindIndex
+          document.write("<br>");
+          find = fruits.findIndex((fruit) => fruit.match("ap"));
+          document.write("<br>FindIdx :", find);
+          //
+
+          find = num.findIndex((n) => n > 50);
+          document.write("<br>FindIdx num :", find);
+
+          //FindLast
+          document.write("<br>");
+          find = fruits.findLast((fruit) => fruit.match("ap"));
+          document.write("<br>FindLast :", find);
+          //
+          find = num.findLast((n) => n > 50);
+          document.write("<br>FindLast num :", find);
+
+          //FindLastIndex
+          document.write("<br>");
+          find = fruits.findLastIndex((fruit) => fruit.match("ap"));
+          document.write("<br>FindLastIdx :", find);
+          //
+          find = num.findLastIndex((n) => n > 50);
+          document.write("<br>FindLastIdx num :", find);
+          document.write("<br>");
+
+          //Reduce
+          let sum = num.reduce((accumulator, current) => {
+            document.write("<br>acc: ", accumulator, ", cur: ", current);
+            return accumulator + current;
+          });
+          //
+          document.write("<br>");
+
+          sum = fruits.reduce((accumulator, current) => {
+            document.write("<br>acc: ", accumulator, ", cur: ", current);
+            return accumulator + " " + current;
+          });
+          document.write("<br>");
+
+          //
+          let person = {
+            name: "ram",
+            address: "Ktm",
+            phone: 98477556,
+          };
+          for (var key in person) {
+            document.write("<br>", key, ":", person[key]);
+          }
+          document.write("<br>");
+          document.write("<br>Name:", person.name);
+        }
+      }
+    </script>
+  </body>
+</html>
