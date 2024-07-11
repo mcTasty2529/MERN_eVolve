@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings</title>
+  </head>
+  <body>
+    <script>
+      {
+        //string - collectionof characters
+        let str =
+          " 'Javascript is a programming language for web. Javascript is a programming language for web. Javascript is a programming language for web.' ";
+
+        document.write("<br><h3>", str);
+        let len = str.length;
+        document.write("<br>", len);
+        document.write("<br>First letter: ", str[0]);
+
+        //slice
+        //slice(start, end)
+        let new_str = str.slice(0, 11);
+        document.write("<br>New: ", new_str);
+        //negative index
+        new_str = str.slice(-9, -1);
+        document.write("<br>New: ", new_str);
+        //only starting index
+        new_str = str.slice(10);
+        document.write("<br>New: ", new_str);
+
+        //substring
+        //negative index cant be used.
+        new_str = str.substring(0, 11);
+        document.write("<br>New: ", new_str);
+
+        new_str = str.substring(11, 0);
+        document.write("<br>New: ", new_str);
+
+        //substr
+        //substr(index, length)
+        new_str = str.substr(0, 5);
+        document.write("<br>New: ", new_str);
+
+        document.write("<br>");
+
+        document.write("<br>New: ", str.toUpperCase());
+        document.write("<br>New: ", str.toLowerCase());
+        document.write("<br>New: ", str.toLocaleUpperCase());
+        document.write("<br>New: ", str.toLocaleLowerCase());
+
+        //trim
+        new_str = str.trim();
+        document.write("<br>Length: ", new_str.length);
+
+        new_str = str.trimStart();
+        document.write("<br>Length: ", new_str.length);
+
+        new_str = str.trimEnd();
+        document.write("<br>Length: ", new_str.length);
+
+        //split
+        let words = str.split(" ");
+        document.write("<br>Words: ", words);
+
+        //padding
+        let symbol = 34677;
+        document.write("<br>", symbol.toString().padStart(8, "a"));
+        document.write("<br>", symbol.toString().padEnd(8, "x"));
+
+        //concatination
+        new_str = str.concat(" YEEET!!");
+        document.write("<br>", new_str);
+
+        //search
+        let result = str.search("programming");
+        document.write("<br>", result);
+
+        document.write("<br>", str.charAt(result));
+        document.write("<br>", str.charCodeAt(result));
+
+        //replace
+        //  /string/ig
+        //  /  / -> expression literal
+        //  `  ` -> template literal
+        // i -> case insensetive
+        // g -> global (replace all)
+        result = str.replace(/Javascript/gi, "JS");
+        document.write("<br>", result);
+      }
+    </script>
+  </body>
+</html>
