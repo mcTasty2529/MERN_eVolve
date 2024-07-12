@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .result {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="result">
+        <div class="player1">
+          <img src="./dice-1.svg" alt="" id="p1" />
+          <h4 id="p1_">1</h4>
+        </div>
+        <div class="player2">
+          <img src="./dice-1.svg" alt="" id="p2" />
+          <h4 id="p2_">1</h4>
+        </div>
+      </div>
+      <h2 id="result">Result</h2>
+      <button onclick="roll()">Roll</button>
+    </div>
+    <script>
+      let dice = [
+        "./dice-1.svg",
+        "./dice-2.svg",
+        "./dice-3.svg",
+        "./dice-4.svg",
+        "./dice-5.svg",
+        "./dice-6.svg",
+      ];
+
+      let p1 = document.getElementById("p1");
+      let p2 = document.getElementById("p2");
+      let p1_ = document.getElementById("p1_");
+      let p2_ = document.getElementById("p2_");
+      let result = document.getElementById("result");
+
+      const roll = () => {
+        let v1 = Math.floor(Math.random() * 6);
+        let v2 = Math.floor(Math.random() * 6);
+        p1.src = dice[v1];
+        p2.src = dice[v2];
+        p1_.innerHTML = v1 + 1;
+        p2_.innerHTML = v2 + 1;
+
+        if (v1 > v2) {
+          result.innerHTML = "Player 1 won.";
+        } else if (v1 < v2) {
+          result.innerHTML = "Player 2 won.";
+        } else {
+          result.innerHTML = "Game Draw.";
+        }
+      };
+    </script>
+  </body>
+</html>

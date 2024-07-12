@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math</title>
+  </head>
+  <body>
+    <script>
+      {
+        let p = Math.PI;
+        document.write("<br><h2>Pi :", p);
+
+        document.write("<br>5<sup>2</sup>: ", Math.pow(5, 2));
+
+        let r = Math.random() * 100;
+        document.write("<br>Random: ", r);
+
+        let round = Math.round(r);
+        document.write("<br>Round: ", round);
+
+        let truncate = Math.trunc(r);
+        document.write("<br>Truncate: ", truncate);
+
+        let floor = Math.floor(r);
+        document.write("<br>Floor: ", floor);
+
+        let ceil = Math.ceil(r);
+        document.write("<br>Ceiling: ", ceil);
+      }
+      {
+        let dice = Math.ceil(Math.random() * 6);
+        document.write(`<br><h1>${dice}</h1>`);
+      }
+    </script>
+  </body>
+</html>
